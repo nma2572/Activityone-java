@@ -1,6 +1,6 @@
 package project;
 
-/** Natnael Argaw(399006831)
+/** Natnael-Argaw(399006831)
  * Created the interfaces, the Airplane abstract class and the class for each plane - */
 public class Assignmentone {
 
@@ -79,7 +79,7 @@ public class Assignmentone {
         public class PrivatePlane extends Airplane implements Private {
             private String ownername;
 
-            public PrivatePlane(String flightNumber, String make, String type, String departureTime, String landingTime, int flightDuration, String ownerName) {
+            public PrivatePlane(String flightNumber, String make, String type, String departureTime, String landingTime, int flightDuration, String ownername) {
                 super(flightNumber, make, type, departureTime, landingTime, flightDuration);
                 this.ownername = ownername;
             }
@@ -106,7 +106,7 @@ public class Assignmentone {
     }    public class Commercialplane extends Airplane implements Commercial {
         private int numberofpassengers;
 
-        public Commercialplane(String flightNumber, String make, String type, String departureTime, String landingTime, int flightDuration, String ownerName) {
+        public Commercialplane(String flightNumber, String make, String type, String departureTime, String landingTime, int flightDuration, int numberofpassengers) {
             super(flightNumber, make, type, departureTime, landingTime, flightDuration);
             this.numberofpassengers = numberofpassengers;
         }
